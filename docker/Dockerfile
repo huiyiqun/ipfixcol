@@ -38,7 +38,7 @@ RUN cd base; \
   ldconfig
 
 # install IPFIXcol plugins
-RUN for p in storage/json; do \
+RUN for p in input/nfdump intermediate/geoip storage/postgres; do \
     cd plugins/$p; \
     autoreconf -i; \
     ./configure --with-distro=debian; \
