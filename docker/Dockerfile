@@ -17,6 +17,10 @@ RUN apt-get update && apt-get install -y \
   libssl1.0-dev \
   libxml2 \
   libxml2-dev \
+  libgeoip1 \
+  libgeoip-dev \
+  libpq5 \
+  libpq-dev \
   pkg-config \
   xsltproc
 
